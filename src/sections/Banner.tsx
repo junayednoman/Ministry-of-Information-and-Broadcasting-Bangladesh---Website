@@ -4,7 +4,7 @@ import SBtn from "@/components/ui/SBtn";
 
 const Banner = () => {
   return (
-    <div className="lg:py-24 md:py-20 py-16">
+    <div className="lg:py-36 md:py-20 py-16">
       <BContainer>
         <div className="text-center">
           <h1 className="md:text-7xl text-5xl font-bold md:leading-[100px] leading-[65px]">
