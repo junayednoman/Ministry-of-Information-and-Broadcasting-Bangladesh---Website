@@ -82,7 +82,7 @@ const ImportantLinks = () => {
                   ))}
                   <a
                     href="#"
-                    className="block bg-lightGreenColor p-1 pt-2  underline px-4 font-semibold text-center mt-3 text-sm"
+                    className="block bg-lightGreenColor p-1 pt-2  underline px-4 font-semibold text-center mt-3 text-sm rounded-sm"
                   >
                     View All Links
                   </a>
@@ -105,7 +105,7 @@ const ImportantLinks = () => {
                   ))}
                   <a
                     href="#"
-                    className="block bg-lightGreenColor p-1 pt-2  underline px-4 font-semibold text-center mt-3 text-sm"
+                    className="block bg-lightGreenColor p-1 pt-2  underline px-4 font-semibold text-center mt-3 text-sm rounded-sm"
                   >
                     View All Links
                   </a>

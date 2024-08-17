@@ -8,7 +8,21 @@ import CharterImg from "@/assets/charter.jpg";
 import performanceAgreementImg from "@/assets/APA.png";
 import NISImg from "@/assets/nis_logo3.jpg";
 import GRSImg from "@/assets/complain.png";
+import RTIImg from "@/assets/infocom.png";
+import innovationImg from "@/assets/INNOVATION (1).png";
+import SPSImg from "@/assets/SPS-3.png";
+import budgetImg from "@/assets/budget2 (1).png";
+import SDGImg from "@/assets/FinalLogoSDG.png";
+import formsImg from "@/assets/forms.jpg";
+import safetynetImg from "@/assets/Untitled-edited-7.png";
+import filmImg from "@/assets/film.jpg";
+import televisionImg from "@/assets/download.png";
+import pressImg from "@/assets/14n.jpg";
+import policyImg from "@/assets/Untitled-1.jpg";
+import othersImg from "@/assets/others.jpg";
+
 import SBtn from "@/components/ui/SBtn";
+import { useState } from "react";
 
 const infoItems = [
   { text: "About us", img: aboutImg },
@@ -19,9 +33,28 @@ const infoItems = [
   { text: "Annual Performance Agreement", img: performanceAgreementImg },
   { text: "National Integrity Strategy (NIS)", img: NISImg },
   { text: "Grievance Redress System (GRS)", img: GRSImg },
+  { text: "Right to Information (RTI)", img: RTIImg },
+  { text: "Innovative Activities", img: innovationImg },
+  { text: "Service Simplification", img: SPSImg },
+  { text: "Budget and Projects", img: budgetImg },
+  { text: "SDG & Dev Plan", img: SDGImg },
+  { text: "Forms", img: formsImg },
+  { text: "Social Sefetynet", img: safetynetImg },
+  { text: "Film", img: filmImg },
+  { text: "Television", img: televisionImg },
+  { text: "Press", img: pressImg },
+  { text: "Act/Policy", img: policyImg },
+  { text: "Others", img: othersImg },
 ];
 
 const Information = () => {
+  const [allItemsOpen, setAllItemsOpen] = useState(false);
+  console.log(allItemsOpen);
+
+  const handleClick = () => {
+    setAllItemsOpen(!allItemsOpen);
+  };
+
   return (
     <div className="md:py-20 py-14 md:pb-24 pb-16 text-center">
       <BContainer>
@@ -32,12 +65,16 @@ const Information = () => {
           <p>Resources and Services Overview</p>
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-6 gap-4">
-          {infoItems.map((item) => (
-            <InfoItem text={item.text} image={item.img} />
-          ))}
+          {infoItems
+            .slice(0, allItemsOpen ? infoItems.length : 8)
+            .map((item) => (
+              <InfoItem text={item.text} image={item.img} />
+            ))}
         </div>
         <div className="mt-10">
-          <SBtn>View All</SBtn>
+          <SBtn handleClick={handleClick}>
+            {allItemsOpen ? "View Less" : "View All"}
+          </SBtn>
         </div>
       </BContainer>
     </div>

@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/drawer";
 import { Menu, X } from "lucide-react";
 import BNavigation from "@/components/header/BNavigation";
+import Notice from "./Notice";
 
 const officeOptions = [
   "মন্ত্রণালয়/বিভাগ",
@@ -35,6 +36,7 @@ const Header = () => {
             </div>
             <div className="items-center gap-3 flex justify-between">
               <Button>English</Button>
+              <Notice />
             </div>
           </div>
         </BContainer>
@@ -64,7 +66,6 @@ const Header = () => {
                   <DrawerClose className="ml-auto pr-6">
                     <X />
                   </DrawerClose>
-
                   <BNavigation />
                 </DrawerContent>
               </Drawer>
