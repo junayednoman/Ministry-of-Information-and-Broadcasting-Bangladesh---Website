@@ -49,7 +49,6 @@ const infoItems = [
 
 const Information = () => {
   const [allItemsOpen, setAllItemsOpen] = useState(false);
-  console.log(allItemsOpen);
 
   const handleClick = () => {
     setAllItemsOpen(!allItemsOpen);
