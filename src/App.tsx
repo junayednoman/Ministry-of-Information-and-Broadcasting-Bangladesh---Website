@@ -1,4 +1,6 @@
 import Banner from "./sections/Banner";
+import Contact from "./sections/Contact";
+import ImportantLinks from "./sections/ImportantLinks";
 import Information from "./sections/Information";
 
 const App = () => {
@@ -6,6 +8,8 @@ const App = () => {
     <>
       <Banner />
       <Information />
+      <ImportantLinks />
+      <Contact />
     </>
   );
 };

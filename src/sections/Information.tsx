@@ -23,7 +23,7 @@ const infoItems = [
 
 const Information = () => {
   return (
-    <div className="md:py-20 py-14 text-center">
+    <div className="md:py-20 py-14 md:pb-24 pb-16 text-center">
       <BContainer>
         <div className="md:mb-12 mb-10">
           <h4 className="md:text-4xl text-3xl font-semibold mb-2">
