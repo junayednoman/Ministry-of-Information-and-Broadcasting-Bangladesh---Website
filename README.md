@@ -23,7 +23,6 @@ This project involves the redesign of the homepage for the Ministry of Informati
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/project-name.git
-   
 
 1. Navigate to the project directory:
    ```bash
