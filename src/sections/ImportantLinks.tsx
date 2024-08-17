@@ -78,7 +78,7 @@ const ImportantLinks = () => {
                     Internal eServices
                   </h5>
                   {importantLinks.map((item) => (
-                    <BLink text={item} />
+                    <BLink key={item} text={item} />
                   ))}
                   <a
                     href="#"
@@ -101,7 +101,7 @@ const ImportantLinks = () => {
                 <div>
                   <h5 className="font-semibold text-lg mb-3">Other Links</h5>
                   {otherImportantLinks.map((item) => (
-                    <BLink text={item} />
+                    <BLink key={item} text={item} />
                   ))}
                   <a
                     href="#"
@@ -134,14 +134,14 @@ const ImportantLinks = () => {
             </TabsContent>
             <TabsContent value="Innovation">
               {innovationLinks.map((item) => (
-                <BLink text={item} />
+                <BLink key={item} text={item} />
               ))}
             </TabsContent>
             <TabsContent value="Others">
               <div className="flex lg:flex-row flex-col lg:gap-12 gap-5">
                 <div>
                   {otherLinks.map((item) => (
-                    <BLink text={item} />
+                    <BLink key={item} text={item} />
                   ))}
                 </div>
                 <div>

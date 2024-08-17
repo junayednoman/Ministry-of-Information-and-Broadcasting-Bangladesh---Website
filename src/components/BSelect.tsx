@@ -19,7 +19,7 @@ export function BSelect({ placeholder, options }: TSelectTypes) {
       </SelectTrigger>
       <SelectContent>
         {options.map((option: string) => (
-          <SelectItem value={option}>{option}</SelectItem>
+          <SelectItem key={option} value={option}>{option}</SelectItem>
         ))}
       </SelectContent>
     </Select>

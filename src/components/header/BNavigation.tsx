@@ -21,11 +21,9 @@ const BNavigation = () => {
     <NavigationMenu className="lg:flex block w-full">
       <NavigationMenuList className="lg:flex w-full block">
         <NavigationMenuItem>
-          <a href="/">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
-          </a>
         </NavigationMenuItem>
 
         <NavigationMenuItem>

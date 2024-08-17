@@ -67,7 +67,7 @@ const Information = () => {
           {infoItems
             .slice(0, allItemsOpen ? infoItems.length : 8)
             .map((item) => (
-              <InfoItem text={item.text} image={item.img} />
+              <InfoItem key={item.text} text={item.text} image={item.img} />
             ))}
         </div>
         <div className="mt-10">

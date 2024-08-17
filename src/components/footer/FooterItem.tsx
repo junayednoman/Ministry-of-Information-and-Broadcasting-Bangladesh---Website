@@ -11,7 +11,7 @@ const FooterItem = ({ heading, items }: TFooterItemProps) => {
       <h5 className="font-semibold text-lg">{heading}</h5>
       <div className="flex flex-col mt-2 space-y-1">
         {items.map((item) => (
-          <div>
+          <div key={item.text}>
             <a
               className="inline-block text-sm font-medium hover:underline duration-200 hover:text-primaryColor"
               href={item.href}
