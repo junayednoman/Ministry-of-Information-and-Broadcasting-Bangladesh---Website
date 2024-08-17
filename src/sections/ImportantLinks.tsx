@@ -1,6 +1,6 @@
 import BContainer from "@/components/BContainer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import yunusImage from "@/assets/Dr. Muhammad Yunus.jpg";
+import nahidImage from "@/assets/IMG.jpg";
 import secretaryImage from "@/assets/secretary.jpg";
 import BLink from "@/components/ui/BLink";
 import {
@@ -28,7 +28,7 @@ const ImportantLinks = () => {
         >
           <TabsList className="mx-auto justify-center w-full py-2 bg-lightGreenColor rounded-b-none flex-wrap h-auto">
             <TabsTrigger value="Chief Adviser">
-              Hon'ble Chief Adviser
+              Honorable Adviser
             </TabsTrigger>
             <TabsTrigger value="Senior Secretary">Senior Secretary</TabsTrigger>
             <TabsTrigger value="Important Links">Important Links</TabsTrigger>
@@ -39,12 +39,12 @@ const ImportantLinks = () => {
           <div className="p-4 border rounded-b-md">
             <TabsContent value="Chief Adviser">
               <div className="flex items-center gap-6">
-                <img className="w-[150px] rounded-md" src={yunusImage} alt="" />
+                <img className="w-[150px] rounded-md" src={nahidImage} alt="" />
                 <div className="space-y-2">
                   <h6 className="font-semibold md:text-xl text-lg">
-                    Dr. Muhammad Yunus
+                  Md. Nahid Islam
                   </h6>
-                  <p className="md:text-base text-sm">Hon'ble Chief Adviser</p>
+                  <p className="md:text-base text-sm">Honorable Adviser, Ministry of Information and Broadcasting</p>
                   <p className="font-semibold underline text-primaryColor">
                     <a href="#">Details</a>
                   </p>
